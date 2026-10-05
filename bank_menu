@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+void bankmenu()
+{
+    int token;
+
+    cout<<"==bank information=="<<endl;
+    cout<<"1.deposit money"<<endl;
+    cout<<"2.withdraw money"<<endl;
+    cout<<"3.check balance"<<endl;
+
+    cout<<"enter your token"<<endl;
+    cin>>token;
+
+    if(token==1)
+    {
+        cout<<"you selected deposit money"<<endl;
+        bankmenu();
+
+    }
+    else if(token==2)
+    {
+        cout<<"you selected withdraw money"<<endl;
+        bankmenu();
+    }
+    else if(token==3)
+    {
+        cout<<"you selected check balance"<<endl;
+        bankmenu();
+    }
+    else
+    {
+        cout<<"invalid token"<<endl;
+        bankmenu();
+    }
+};
+int main()
+{
+    bankmenu();
+
+    return 0;
+}
